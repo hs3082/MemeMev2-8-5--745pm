@@ -15,6 +15,8 @@ class SentMemesCollectionViewController: UICollectionViewController {
     
     // Meme data model
     var memes: [Meme]!
+
+    
     
     // Flow layout object
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!

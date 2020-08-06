@@ -43,7 +43,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="0eF-Yg-dF7"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Z3l-pc-ao3"/>
+                    <navigationItem key="navigationItem" title="List Sent Meme" id="Z3l-pc-ao3"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="tableToEditor" id="QDO-eX-89y"/>
                     </connections>
@@ -200,7 +200,7 @@
         <!--Meme Detail View Controller-->
         <scene sceneID="BcT-rs-1oU">
             <objects>
-                <viewController id="1fQ-aa-Mdf" customClass="MemeDetailViewController" customModule="Meme_V2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1fQ-aa-Mdf" customClass="MemeDetailViewController" customModule="MemeMe_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6cd-mK-qh2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -240,7 +240,7 @@
         <!--Sent memes Table View-->
         <scene sceneID="vkS-1g-ZK9">
             <objects>
-                <collectionViewController storyboardIdentifier="SentMemesCollectionViewController" id="bru-Kn-lR7" userLabel="Sent memes Table View" customClass="SentMemesCollectionViewController" customModule="Meme_V2" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="SentMemesCollectionViewController" id="bru-Kn-lR7" userLabel="Sent memes Table View" customClass="SentMemesCollectionViewController" customModule="MemeMe_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="rIC-0G-tWS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -252,7 +252,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemeCollectionViewCell" id="LaB-rs-SG7" customClass="MemeCollectionViewCell" customModule="Meme_V2" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemeCollectionViewCell" id="LaB-rs-SG7" customClass="MemeCollectionViewCell" customModule="MemeMe_v2" customModuleProvider="target">
                                 <rect key="frame" x="5.5" y="0.0" width="403" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QfW-8W-9Q1">
@@ -290,7 +290,7 @@
                             <outlet property="delegate" destination="bru-Kn-lR7" id="6zM-3U-bGH"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="ApF-Jb-vrH"/>
+                    <navigationItem key="navigationItem" title="Collection Sent Meme" id="ApF-Jb-vrH"/>
                     <connections>
                         <outlet property="flowLayout" destination="pVP-U0-EX7" id="HbQ-nn-RFU"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="collectionToEditor" id="Fh1-YS-4Wn"/>

@@ -113,7 +113,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         //Enable Share Button
         shareButton.isEnabled = true
         //Dismiss
-        dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
         
     }
     
