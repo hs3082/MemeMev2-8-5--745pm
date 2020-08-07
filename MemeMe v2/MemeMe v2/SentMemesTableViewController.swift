@@ -6,7 +6,7 @@
 //  Copyright © 2020 Howard Snyder. All rights reserved.
 //
 
-import Foundation
+//import Foundation
 import UIKit
 
 class SentMemesTableViewController: UITableViewController {
@@ -19,6 +19,14 @@ class SentMemesTableViewController: UITableViewController {
     }
 //////////////////////////// end of updated based on advice from mentor - Vivek M
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Meme", style: .plain, target: self, action: #selector(addMeme))
+        
+        //tableView.delegate = self
+        
+    }
     
         override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
@@ -33,14 +41,7 @@ class SentMemesTableViewController: UITableViewController {
         }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Meme", style: .plain, target: self, action: #selector(addMeme))
-        
-        //tableView.delegate = self
-        
-    }
+
     
     @objc func addMeme() {
     let controller = (storyboard?.instantiateViewController(identifier: "MemeEditorViewController"))!

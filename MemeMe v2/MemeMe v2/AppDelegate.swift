@@ -4,7 +4,7 @@
 //
 //  Created by Howard Snyder on 7/5/20.
 //  Copyright © 2020 Howard Snyder. All rights reserved.
-//https://github.com/hs3082/MemeMev2-8-5--745pm.git
+
 
 import UIKit
 

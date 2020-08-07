@@ -31,8 +31,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        setupTextField(tf: TopTextField, text: "Top")
-        setupTextField(tf: BottomTextField, text: "Bottom")
+        setupTextField(tf: TopTextField, text: "TOP")
+        setupTextField(tf: BottomTextField, text: "BOTTOM")
         
         }
     
@@ -174,7 +174,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func save() {
         //_ = Meme(
-        var meme = Meme(
+        let meme = Meme(
             topText:self.TopTextField.text!,
             bottomText: self.BottomTextField.text!,
             originalImage: self.ImagePickerView.image!,
