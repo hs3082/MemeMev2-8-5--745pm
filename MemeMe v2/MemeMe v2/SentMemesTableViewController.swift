@@ -9,13 +9,17 @@
 import Foundation
 import UIKit
 
-
-
-
 class SentMemesTableViewController: UITableViewController {
 
-    var memes: [Meme]!
-
+    ////////////////////////////updated - removing var memes: [Meme]! based on advice from mentor - Vivek M
+    //var memes: [Meme]!
+    ////////////////////////////updated - added lines 20-22  based on advice from mentor - Vivek M
+    var memes: [Meme] {
+            return (UIApplication.shared.delegate as! AppDelegate).memes
+    }
+//////////////////////////// end of updated based on advice from mentor - Vivek M
+    
+    
         override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
             self.tabBarController?.tabBar.isHidden = false
