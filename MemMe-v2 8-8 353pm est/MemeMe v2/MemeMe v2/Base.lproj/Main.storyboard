@@ -12,7 +12,7 @@
         <scene sceneID="FJv-CM-eH8">
             <objects>
                 <tableViewController id="L1b-6Z-gVJ" customClass="SentMemesTableViewController" customModule="MemeMe_v2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NhG-Eg-Ww7">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NhG-Eg-Ww7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -34,6 +34,7 @@
                     <navigationItem key="navigationItem" title="Table Sent Meme" id="OcO-7Q-clS"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="createMeme" id="lSV-1s-gkd"/>
+                        <segue destination="1fQ-aa-Mdf" kind="show" id="oXr-9X-Zeg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BaR-Pz-aCg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -147,47 +148,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3013" y="-256"/>
+            <point key="canvasLocation" x="3558" y="289"/>
         </scene>
-        <!--Meme Detail View Controller-->
+        <!--nnn-->
         <scene sceneID="BcT-rs-1oU">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7y-WQ-8g5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="1fQ-aa-Mdf" customClass="MemeDetailViewController" customModule="MemeMe_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6cd-mK-qh2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ywp-bc-ogI" userLabel="Meme Image View">
-                                <rect key="frame" x="87" y="333" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="138" width="414" height="725"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zJ-Gc-odi" userLabel="Meme Label">
-                                <rect key="frame" x="186" y="526" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="sfW-P1-m00" firstAttribute="bottom" secondItem="1zJ-Gc-odi" secondAttribute="bottom" constant="315" id="3Dc-T7-HXC"/>
-                            <constraint firstItem="1zJ-Gc-odi" firstAttribute="leading" secondItem="sfW-P1-m00" secondAttribute="leading" constant="186" id="4DK-vR-rZ3"/>
-                            <constraint firstItem="ywp-bc-ogI" firstAttribute="leading" secondItem="sfW-P1-m00" secondAttribute="leading" constant="87" id="GWo-jQ-c7j"/>
-                            <constraint firstItem="1zJ-Gc-odi" firstAttribute="top" secondItem="ywp-bc-ogI" secondAttribute="bottom" constant="65" id="QoH-Qf-4qn"/>
-                            <constraint firstItem="sfW-P1-m00" firstAttribute="trailing" secondItem="ywp-bc-ogI" secondAttribute="trailing" constant="87" id="hjK-2W-FoQ"/>
-                            <constraint firstItem="sfW-P1-m00" firstAttribute="trailing" secondItem="1zJ-Gc-odi" secondAttribute="trailing" constant="186" id="l9i-0E-9yG"/>
-                            <constraint firstItem="1zJ-Gc-odi" firstAttribute="top" secondItem="ywp-bc-ogI" secondAttribute="bottom" constant="65" id="r6K-Vb-eDz"/>
-                            <constraint firstItem="ywp-bc-ogI" firstAttribute="top" secondItem="sfW-P1-m00" secondAttribute="top" constant="289" id="wHt-d8-MQz"/>
+                            <constraint firstItem="ywp-bc-ogI" firstAttribute="bottom" secondItem="sfW-P1-m00" secondAttribute="bottom" constant="50" id="3ct-7J-Gh9"/>
+                            <constraint firstItem="ywp-bc-ogI" firstAttribute="top" secondItem="sfW-P1-m00" secondAttribute="top" constant="50" id="6OM-NR-sZK"/>
+                            <constraint firstItem="ywp-bc-ogI" firstAttribute="leading" secondItem="sfW-P1-m00" secondAttribute="leading" id="PuH-Ri-4Sw"/>
+                            <constraint firstItem="ywp-bc-ogI" firstAttribute="trailing" secondItem="sfW-P1-m00" secondAttribute="trailing" id="roz-jm-PKx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sfW-P1-m00"/>
                     </view>
+                    <navigationItem key="navigationItem" title="nnn" id="625-31-Wex"/>
                     <connections>
                         <outlet property="memeImageView" destination="ywp-bc-ogI" id="GRN-hp-uHv"/>
-                        <outlet property="memeLabel" destination="1zJ-Gc-odi" id="Jcd-2b-2cv"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K7y-WQ-8g5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4359" y="-256"/>
+            <point key="canvasLocation" x="4357.971014492754" y="-256.47321428571428"/>
         </scene>
         <!--Sent memes Table View-->
         <scene sceneID="vkS-1g-ZK9">
@@ -246,6 +237,7 @@
                     <connections>
                         <outlet property="flowLayout" destination="pVP-U0-EX7" id="HbQ-nn-RFU"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="createMeme" id="Fh1-YS-4Wn"/>
+                        <segue destination="1fQ-aa-Mdf" kind="show" id="Qb9-Ww-Iro"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTV-X5-mpI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -306,6 +298,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fh1-YS-4Wn"/>
+        <segue reference="oXr-9X-Zeg"/>
+        <segue reference="lSV-1s-gkd"/>
     </inferredMetricsTieBreakers>
 </document>
